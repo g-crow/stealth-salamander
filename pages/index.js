@@ -79,6 +79,14 @@ export default function Home() {
           align-items: center;
         }
 
+        footer:hover,
+        .footer:focus,
+        .footer:active {
+          color: #0070f3;
+          border-color: #0070f3;
+          cursor: pointer;
+        }
+
         a {
           color: inherit;
           text-decoration: none;
