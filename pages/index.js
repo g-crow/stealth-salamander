@@ -15,7 +15,7 @@ export default function Home() {
         </h1>
 
         <p className="description">
-        Missoula's warm and welcoming self-development group
+          Missoula's warm and welcoming self-development group
         </p>
 
         <div className="grid">
