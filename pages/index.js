@@ -24,9 +24,19 @@ export default function Home() {
             <p>Our origin story and what we're about</p>
           </a>
 
+          <a href="https://decidingtofailbetter.com/" className="card">
+            <h3>The 100 Day Challenge &rarr;</h3>
+            <p>Choose one thing and do it just 50%</p>
+          </a>
+
           <a href="/posts/first-post" className="card">
             <h3>Blog &rarr;</h3>
             <p>From the minds of our members</p>
+          </a>
+
+          <a href="/posts/first-post" className="card">
+            <h3>Contact &rarr;</h3>
+            <p>We'd love to hear from you</p>
           </a>
         </div>
       </main>
