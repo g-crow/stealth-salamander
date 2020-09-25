@@ -185,6 +185,10 @@ export default function Home() {
         * {
           box-sizing: border-box;
         }
+
+        #__next-prerender-indicator {
+          display: none;
+        }
       `}</style>
     </div>
   )
