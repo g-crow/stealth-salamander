@@ -1,6 +1,8 @@
 import Head from 'next/head'
 import Link from 'next/link'
 
+import "../styles/basic-styles.scss"
+
 export default function Home() {
   return (
     <div className="container">
@@ -10,7 +12,7 @@ export default function Home() {
       </Head>
 
       <main>
-        <h1 className="title">
+        <h1 className="header">
           Deciding to Fail Better
         </h1>
 
@@ -102,14 +104,6 @@ export default function Home() {
           text-decoration: none;
         }
 
-        .title {
-          margin: 0;
-          line-height: 1.15;
-          font-size: 4rem;
-          color: rgb(42,54,77);
-        }
-
-        .title,
         .description {
           text-align: center;
         }
