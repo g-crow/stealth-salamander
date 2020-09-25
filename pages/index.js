@@ -26,7 +26,7 @@ export default function Home() {
 
           <a href="https://decidingtofailbetter.com/" className="card">
             <h3>The 100 Day Challenge &rarr;</h3>
-            <p>Choose one thing and do it just 50%</p>
+            <p>Choose one thing and do it 50%</p>
           </a>
 
           <a href="/posts/first-post" className="card">
@@ -106,7 +106,7 @@ export default function Home() {
           margin: 0;
           line-height: 1.15;
           font-size: 4rem;
-          color: #0070f3;
+          color: rgb(42,54,77);
         }
 
         .title,
