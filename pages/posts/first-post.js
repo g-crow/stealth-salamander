@@ -1,15 +1,19 @@
 import Link from 'next/link'
+import Head from 'next/head'
+import Layout from '../../components/layout'
 
 export default function FirstPost() {
   return (
-    <>
-      <img src="/images/zoom_background_blue.jpg" alt="Vercel Logo" className="logo" />'
+    <Layout>
+      <Head>
+        <title>First Post</title>
+      </Head>
       <h1>First Post</h1>
       <h2>
         <Link href="/">
           <a>Back to home</a>
         </Link>
       </h2>
-    </>
+    </Layout>
   )
 }

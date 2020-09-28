@@ -5,23 +5,25 @@ export default function Home() {
   return (
     <div className="container">
       <Head>
-        <title>Deciding to Fail Better</title>
+        <title>Deciding to Fail Better Blog</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
       <main>
+        <img src="/images/stuart_peak.jpg" alt="Mountain scenery" className="hero" />
+
         <h1 className="title">
-          Deciding to Fail Better
+          Deciding to Fail Better <span className="blog">Blog</span>
         </h1>
 
         <p className="description">
-          Missoula's warm and welcoming self-development group
+          From the minds of Missoula's warm and welcoming self-development group
         </p>
 
         <div className="grid">
           <a href="/about" className="card">
             <h3>About &rarr;</h3>
-            <p>Our origin story and what we're about</p>
+            <p>What we're about</p>
           </a>
 
           <a href="https://decidingtofailbetter.com/" className="card">
@@ -68,6 +70,11 @@ export default function Home() {
           justify-content: center;
           align-items: center;
         }
+        .hero {
+          height: 275px;
+          border-radius: 10px;
+          margin-bottom: 1em;
+        }
         footer {
           width: 100%;
           height: 100px;
@@ -100,6 +107,9 @@ export default function Home() {
           line-height: 1.15;
           font-size: 4rem;
           color: rgb(42,54,77);
+        }
+        .title .blog {
+          color: rgb(97,116,145);
         }
         .title,
         .description {
@@ -159,23 +169,6 @@ export default function Home() {
             width: 100%;
             flex-direction: column;
           }
-        }
-      `}</style>
-
-      <style jsx global>{`
-        html,
-        body {
-          padding: 0;
-          margin: 0;
-          font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
-            Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue,
-            sans-serif;
-        }
-        * {
-          box-sizing: border-box;
-        }
-        #__next-prerender-indicator {
-          display: none;
         }
       `}</style>
     </div>
