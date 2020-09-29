@@ -37,23 +37,23 @@ export default function Home({ allPostsData }) {
       
         <div className="grid">
           <a href="/about" className="card">
-            <h3>About &rarr;</h3>
-            <p>What we're about</p>
-          </a>
-
-          <a href="https://decidingtofailbetter.com/" className="card">
-            <h3>The 100 Day Challenge &rarr;</h3>
-            <p>Choose one thing and do it 50%</p>
+            <h3>Card &rarr;</h3>
+            <p>A thing with card styling</p>
           </a>
 
           <a href="/posts/first-post" className="card">
-            <h3>Blog &rarr;</h3>
-            <p>From the minds of our members</p>
+            <h3>Card 2 &rarr;</h3>
+            <p>A thing with card styling</p>
           </a>
 
           <a href="/posts/first-post" className="card">
-            <h3>Contact &rarr;</h3>
-            <p>We'd love to hear from you</p>
+            <h3>Card 3 &rarr;</h3>
+            <p>A thing with card styling</p>
+          </a>
+
+          <a href="/posts/first-post" className="card">
+            <h3>Card 4 &rarr;</h3>
+            <p>A thing with card styling</p>
           </a>
         </div>
       </main>
