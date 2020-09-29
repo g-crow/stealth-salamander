@@ -1,7 +1,7 @@
 import Head from 'next/head'
-import Link from 'next/link'
+import { getSortedPostsData } from '../lib/posts'
 
-export default function Home() {
+export default function Home({ allPostsData }) {
   return (
     <div className="container">
       <Head>
@@ -20,6 +20,21 @@ export default function Home() {
           From the minds of Missoula's warm and welcoming self-development group
         </p>
 
+        <section>
+          <h2>Blog from Markdown</h2>
+          <ul>
+            {allPostsData.map(({ id, date, title }) => (
+              <li key={id}>
+                {title}
+                <br />
+                {id}
+                <br />
+                {date}
+              </li>
+            ))}
+          </ul>
+        </section>
+      
         <div className="grid">
           <a href="/about" className="card">
             <h3>About &rarr;</h3>
@@ -173,4 +188,13 @@ export default function Home() {
       `}</style>
     </div>
   )
+}
+
+export async function getStaticProps() {
+  const allPostsData = getSortedPostsData()
+  return {
+    props: {
+      allPostsData
+    }
+  }
 }
