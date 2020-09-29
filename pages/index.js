@@ -21,41 +21,17 @@ export default function Home({ allPostsData }) {
         </p>
 
         <section>
-          <h2>Blog from Markdown</h2>
           <ul>
             {allPostsData.map(({ id, date, title }) => (
               <li key={id}>
-                {title}
-                <br />
-                {id}
-                <br />
-                {date}
+                <a href="/about" className="card">
+                  <h3>{title} &rarr;</h3>
+                  <p>{id} {date}</p>
+                </a>
               </li>
             ))}
           </ul>
         </section>
-      
-        <div className="grid">
-          <a href="/about" className="card">
-            <h3>Card &rarr;</h3>
-            <p>A thing with card styling</p>
-          </a>
-
-          <a href="/posts/first-post" className="card">
-            <h3>Card 2 &rarr;</h3>
-            <p>A thing with card styling</p>
-          </a>
-
-          <a href="/posts/first-post" className="card">
-            <h3>Card 3 &rarr;</h3>
-            <p>A thing with card styling</p>
-          </a>
-
-          <a href="/posts/first-post" className="card">
-            <h3>Card 4 &rarr;</h3>
-            <p>A thing with card styling</p>
-          </a>
-        </div>
       </main>
 
       <footer>
@@ -88,7 +64,7 @@ export default function Home({ allPostsData }) {
         .hero {
           height: 275px;
           border-radius: 10px;
-          margin-bottom: 1em;
+          margin-bottom: 2em;
         }
         footer {
           width: 100%;
@@ -131,7 +107,7 @@ export default function Home({ allPostsData }) {
           text-align: center;
         }
         .description {
-          line-height: 1.5;
+          line-height: .4;
           font-size: 1.5rem;
         }
         code {
@@ -142,17 +118,13 @@ export default function Home({ allPostsData }) {
           font-family: Menlo, Monaco, Lucida Console, Liberation Mono,
             DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace;
         }
-        .grid {
+
+        li {
           display: flex;
-          align-items: center;
-          justify-content: center;
-          flex-wrap: wrap;
-          max-width: 800px;
-          margin-top: 3rem;
         }
         .card {
-          margin: 1rem;
-          flex-basis: 45%;
+          margin: 1rem auto;
+          flex-basis: 100%;
           padding: 1.5rem;
           text-align: left;
           color: inherit;
