@@ -1,4 +1,5 @@
 import Layout from '../../components/layout'
+import Link from 'next/link'
 import { getAllPostIds, getPostData } from '../../lib/posts'
 
 export default function Post({ postData }) {
@@ -9,8 +10,13 @@ export default function Post({ postData }) {
       {postData.id}
       <br />
       {postData.date}
+      <h2>
+        <Link href="/">
+        <a>Back to home</a>
+        </Link>
+      </h2>
     </Layout>
-  )
+    )
 }
 
 export async function getStaticPaths() {
