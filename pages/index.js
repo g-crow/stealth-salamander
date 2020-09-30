@@ -10,7 +10,7 @@ export default function Home({ allPostsData }) {
       </Head>
 
       <main>
-        <img src="/images/stuart_peak.jpg" alt="Mountain scenery" className="hero" />
+        <img src="/images/stuart_peak.jpg" alt="Mountain scenery" className="main-img" />
 
         <h1 className="title">
           Deciding to Fail Better <span className="blog">Blog</span>
@@ -61,10 +61,11 @@ export default function Home({ allPostsData }) {
           justify-content: center;
           align-items: center;
         }
-        .hero {
+        .main-img {
           height: 275px;
           border-radius: 10px;
           margin-bottom: 2em;
+          max-width: 100%;
         }
         footer {
           width: 100%;
@@ -88,6 +89,9 @@ export default function Home({ allPostsData }) {
           color: #0070f3;
           border-color: #0070f3;
           cursor: pointer;
+        }
+        ul {
+          padding-inline-start: 0;
         }
         a {
           color: inherit;
